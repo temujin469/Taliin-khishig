@@ -10,11 +10,11 @@
   <!-- import style -->
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/global.css" />
-  <link rel="stylesheet" href="./dist/output.css" />
+  <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
 
 
   <!-- import tailwind cdn -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- import font-awesome -->
   <script src="https://kit.fontawesome.com/e61ce33beb.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="bg-gray-200">
+<body class="bg-gray-200 overflow-x-hidden">
   <!-- header-section start -->
   <header class="header-section relative h-[90vh]">
 
@@ -92,9 +92,9 @@
     </nav>
     <!-- navbar end -->
     <div
-      class="text-white lg:px-10 relative bottom-[-100px] md:static md:h-[calc(80vh-150px)] h-[calc(90vh-59px)] flex flex-col-reverse md:container md:mx-auto">
+      class="text-white lg:px-10 relative bottom-[-250px] md:static md:h-[calc(80vh-150px)] h-[calc(90vh-59px)] flex flex-col-reverse md:container md:mx-auto">
       <div
-        class="md:max-w-[700px] bg-gradient-to-br from-[#dd5900] to-[#f69321] md:bg-none pb-32 pt-16 px-10 md:px-0 md:pb-16">
+        class="md:max-w-[700px] bg-gradient-to-br from-[#e77021] to-[#f5b062] md:bg-none pb-32 pt-16 px-10 md:px-0 md:pb-16">
         <p class="text-3xl font-semibold mb-10 md:mb-5">Your road to the future resources.</p>
         <p class="font-medium text-lg">What we produce is essential for the world to continue to grow and many of our
           products
@@ -109,7 +109,7 @@
   <!-- services start -->
   <div class="relative lg:px-20">
     <ul
-      class="md:container mb-10 mx-5 md:mx-auto md:mt-[-80px] flex max-w-[1100px] m-0 flex-col md:flex-row rounded-xl shadow-lg bg-white divide-y md:divide-y-0 px-2 md:divide-x  ">
+      class="md:container mb-10 mx-5 md:mx-auto md:mt-[-80px] grid max-w-[1100px] mt-40 md:grid-cols-2 lg:grid-cols-4 rounded-xl shadow-lg bg-white divide-y md:divide-y-0 px-2 md:divide-x  ">
       <li class="flex flex-col gap-3 mx-10 md:mx-0 py-10 md:py-0 md:px-10 md:my-10">
         <img src="./assets/serviceIcons/Group 30311.png"
           class="w-12 h-12 rounded-full overflow-hidden p-2 border-2 border-[#FE7200]" alt="">
@@ -183,12 +183,12 @@
 
   <!-- section start -->
   <div class="bg-white">
-    <ul class="md:container mx-auto px-10  py-20 flex flex-col justify-center items-center md:flex-row gap-5">
+    <ul class="md:container mx-auto px-10 md:px-20  py-20 flex flex-col justify-center items-center md:flex-row gap-5">
       <li class="min-h-[380px] rounded-xl border overflow-hidden shadow-sm hover:shadow-lg">
         <img src="./assets/wh/img1.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">What we produce</p>
-          <p class="text-[15px] mb-5">
+          <p class="text-sm mb-5">
             What we produce is essential for the world to continue to grow and many of our
             products
             will help make the
@@ -196,7 +196,7 @@
             cleaner energy possible
           </p>
           <a href="#" class="flex items-center">
-            <p class="text-[#FE7200]">See more</p>
+            <p class="text-[#fe7200]">See more</p>
             <ion-icon name="chevron-forward-outline"
               class="text-[#FE7200] text-xl pl-1 hover:pl-3 transition-all duration-200"></ion-icon>
           </a>
@@ -206,7 +206,7 @@
         <img src="./assets/wh/img2.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">Where we Operate</p>
-          <p class="text-[15px] mb-5">
+          <p class="text-sm mb-5">
             What we produce is essential for the world to continue to grow and many of our
             products
             will help make the
@@ -224,7 +224,7 @@
         <img src="./assets/wh/img3.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">Working with us</p>
-          <p class="text-[15px] mb-5">
+          <p class="text-sm mb-5">
             What we produce is essential for the world to continue to grow and many of our
             products
             will help make the
@@ -244,9 +244,9 @@
 
 
   <!-- greeting-section start -->
-  <div class=" md:flex justify-center items-center hidden my-32">
+  <div class=" md:flex justify-center items-center hidden md:px-32 my-32">
     <div
-      class="md:container md:mx-auto mx-5 md:h-[500px] flex md:flex-row flex-col shadow-lg rounded-lg overflow-hidden">
+      class="md:container md:mx-auto mx-5 md:min-h-[500px] flex md:flex-row flex-col shadow-lg rounded-lg overflow-hidden">
       <div class="flex-[1]">
         <img src="./assets/images/greeting.png" class="h-full object-cover " />
       </div>
@@ -471,30 +471,30 @@
         <p class="py-2 px-5 rounded-lg bg-orange-400/40 text-center text-[#FE7200]">Why us?</p>
       </div>
       <ul class="flex lg:flex-row flex-col gap-5 justify-center ">
-        <div class="flex gap-5">
+        <div class="flex gap-x-5">
           <li
-            class="bg-white shadow-sm rounded-lg p-10 flex justify-center items-center flex-col md:w-[200px] flex-[1]">
+            class="bg-white shadow-sm rounded-lg p-7 md:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
             <p class="text-2xl mb-1 font-bold">870</p>
             <p class="mb-2">Deals closed</p>
             <img src="./assets/businessFactsIcons/deals.png" />
           </li>
           <li
-            class="bg-white shadow-sm rounded-lg p-10 flex justify-center items-center flex-col md:w-[200px] flex-[1]">
+            class="bg-white shadow-sm rounded-lg p-7 md:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
             <p class="text-2xl mb-1 font-bold">5+</p>
             <p class="mb-2">Projects</p>
             <img src="./assets/businessFactsIcons/project.png" />
           </li>
         </div>
 
-        <div class="flex gap-5">
+        <div class="flex gap-x-5">
           <li
-            class="bg-white shadow-sm rounded-lg p-10 flex justify-center items-center flex-col md:w-[200px] flex-[1]">
+            class="bg-white shadow-sm rounded-lg p-7 md:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
             <p class="text-2xl mb-1 font-bold">1.7m</p>
             <p class="mb-2">Tons transported</p>
             <img src="./assets/businessFactsIcons/settings.png" />
           </li>
           <li
-            class="bg-white shadow-sm rounded-lg p-10 flex justify-center items-center flex-col md:w-[200px] flex-[1]">
+            class="bg-white shadow-sm rounded-lg p-7 md:p-10 flex justify-center items-center flex-col md:w-[200px] flex-[1]">
             <p class="text-2xl mb-1 font-bold">200+</p>
             <p class="mb-2">Employees</p>
             <img src="./assets/businessFactsIcons/employee.png" />
@@ -534,7 +534,7 @@
 
 
   <!-- news-section start-->
-  <div class="md:container md:mx-auto px-5">
+  <div class="lg:container lg:mx-auto px-5  md:px-40">
     <div class="flex flex-col md:flex-row items-center gap-5 pt-16">
       <p class="text-xl font-semibold">Latest news</p>
       <p class="py-2 px-5 rounded-lg bg-orange-400/40 flex items-center text-center text-[#FE7200]">More news
@@ -639,13 +639,13 @@
       </div>
     </div>
     <img src="./assets//images/Write-a-Professional-Email 1 (1).png"
-      class="md:relative px-5 md:px-0 md:mt-0 md:ml-[-100px] w-[500px] h-full" />
+      class="md:relative px-5 md:px-0 md:mt-0 md:ml-[-100px] md:w-[500px] h-full" />
   </div>
   <!-- section start -->
 
   <!-- footer start -->
   <footer class="bg-[#353B41]">
-    <div class="p-5 md:pt-20 lg:container lg:mx-auto  sm:p-6">
+    <div class="p-5 md:pt-20 lg:container md:px-24 lg:mx-auto  sm:p-6">
       <div class="flex md:flex-row flex-col justify-between gap-8 md:gap-6 py-10">
         <div class="mb-6 md:mb-0">
           <a href="/" class="flex items-center">
@@ -759,11 +759,11 @@
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
       },
