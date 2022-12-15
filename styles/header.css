@@ -1,0 +1,28 @@
+@import "./global.css";
+
+header {
+  background-image: url("../assets/images/hero2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../assets/images/hero1.png");
+  }
+  50% {
+    background-image: url("../assets/images/hero2.png");
+  }
+  100% {
+    background-image: url("../assets/images/hero3.png");
+  }
+  /* 75% {
+    background-image: url("../assets/images/hero4.png");
+  }
+  100% {
+    background-image: url("../assets/images/hero5.png");
+  } */
+}
