@@ -10,7 +10,7 @@
   <!-- import style -->
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/global.css" />
-  <link rel="stylesheet" href="./styles/dist/output.css" />
+  <link rel="stylesheet" href="./dist/output.css" />
 
 
   <!-- import tailwind cdn -->
@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-200">
   <!-- header-section start -->
   <header class="header-section relative h-[90vh]">
 
@@ -41,11 +41,11 @@
           <ion-icon name="chevron-down-outline" class="text-white"></ion-icon>
         </div>
       </div>
-      <div class="nav-row-2 px-4 bg-white md:bg-transparent flex justify-between items-center md:h-[100px] h-[80px]">
+      <div class="nav-row-2 px-4 bg-white md:bg-transparent flex justify-between items-center md:h-[100px] h-[60px]">
         <div class="flex items-center justify-between w-full">
           <a href="index.html" class="logo-wrapper flex items-center">
-            <img src="./assets/images/logo1.png" alt="logo" class="logo w-16 md:w-20">
-            <h2 class="logo-title text-white hidden font-semibold md:block">TALIIN KHISHIG MINING</h2>
+            <img src="./assets/images/logo1.png" alt="logo" class="logo w-12 md:w-20">
+            <h2 class="logo-title md:text-white font-semibold md:block">TALIIN KHISHIG MINING</h2>
           </a>
           <div class="flex items-center md:hidden">
             <div>
@@ -61,24 +61,30 @@
         </div>
         <ul
           class="nav-menu hidden md:bg-transparent text-center md:flex justify-between items-center w-full fixed md:static left-0 top-[80px]">
-          <li class="my-[50px] md:my-0 flex items-center">
+          <li
+            class="my-[50px] md:my-0 flex items-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link active text-white">About</a>
             <ion-icon name="chevron-down-outline" class="text-white pl-2"></ion-icon>
           </li>
-          <li class="my-[50px] md:my-0 flex items-center">
+          <li
+            class="my-[50px] md:my-0 flex items-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link text-white">Service</a>
             <ion-icon name="chevron-down-outline" class="text-white pl-2"></ion-icon>
           </li>
-          <li class="my-[50px] md:my-0">
+          <li
+            class="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link text-white">Project</a>
           </li>
-          <li class="my-[50px] md:my-0">
+          <li
+            class="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link text-white">Careers</a>
           </li>
-          <li class="my-[50px] md:my-0">
+          <li
+            class="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link text-white">News</a>
           </li>
-          <li class="my-[50px] md:my-0">
+          <li
+            class="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
             <a href="#" class="nav-link text-white">Contact us</a>
           </li>
         </ul>
@@ -86,7 +92,7 @@
     </nav>
     <!-- navbar end -->
     <div
-      class="text-white md:h-[calc(80vh-150px)] h-[calc(90vh-79px)] flex flex-col-reverse md:mx-5 lg:container lg:mx-auto">
+      class="text-white lg:px-10 relative bottom-[-100px] md:static md:h-[calc(80vh-150px)] h-[calc(90vh-59px)] flex flex-col-reverse md:container md:mx-auto">
       <div
         class="md:max-w-[700px] bg-gradient-to-br from-[#dd5900] to-[#f69321] md:bg-none pb-32 pt-16 px-10 md:px-0 md:pb-16">
         <p class="text-3xl font-semibold mb-10 md:mb-5">Your road to the future resources.</p>
@@ -101,9 +107,9 @@
   <!-- header-section end -->
 
   <!-- services start -->
-  <div class="relative">
+  <div class="relative lg:px-20">
     <ul
-      class="lg:container mb-10 mx-5 lg:mx-auto mt-[-80px] flex max-w-[1100px] m-0 flex-col md:flex-row rounded-xl bg-white divide-y md:divide-y-0 px-2 md:divide-x  ">
+      class="md:container mb-10 mx-5 md:mx-auto md:mt-[-80px] flex max-w-[1100px] m-0 flex-col md:flex-row rounded-xl shadow-lg bg-white divide-y md:divide-y-0 px-2 md:divide-x  ">
       <li class="flex flex-col gap-3 mx-10 md:mx-0 py-10 md:py-0 md:px-10 md:my-10">
         <img src="./assets/serviceIcons/Group 30311.png"
           class="w-12 h-12 rounded-full overflow-hidden p-2 border-2 border-[#FE7200]" alt="">
@@ -177,9 +183,8 @@
 
   <!-- section start -->
   <div class="bg-white">
-    <ul
-      class="lg:container mx-auto md:p-10 px-10 md:px-0  p-5 py-20 flex flex-col justify-center items-center md:flex-row gap-5">
-      <li class="min-h-[380px] rounded-xl border overflow-hidden">
+    <ul class="md:container mx-auto px-10  py-20 flex flex-col justify-center items-center md:flex-row gap-5">
+      <li class="min-h-[380px] rounded-xl border overflow-hidden shadow-sm hover:shadow-lg">
         <img src="./assets/wh/img1.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">What we produce</p>
@@ -197,7 +202,7 @@
           </a>
         </div>
       </li>
-      <li class="min-h-[380px] rounded-xl border overflow-hidden">
+      <li class="min-h-[380px] rounded-xl border overflow-hidden shadow-sm hover:shadow-lg">
         <img src="./assets/wh/img2.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">Where we Operate</p>
@@ -215,7 +220,7 @@
           </a>
         </div>
       </li>
-      <li class="min-h-[380px] rounded-xl border overflow-hidden">
+      <li class="min-h-[380px] rounded-xl border overflow-hidden shadow-sm hover:shadow-lg">
         <img src="./assets/wh/img3.png" class="w-full h-[40%] object-cover" alt="">
         <div class="h-[60%] p-5">
           <p class="font-semibold text-lg mb-3">Working with us</p>
@@ -240,7 +245,8 @@
 
   <!-- greeting-section start -->
   <div class=" md:flex justify-center items-center hidden my-32">
-    <div class="md:container md:mx-auto mx-5 md:h-[500px] flex md:flex-row flex-col rounded-lg overflow-hidden">
+    <div
+      class="md:container md:mx-auto mx-5 md:h-[500px] flex md:flex-row flex-col shadow-lg rounded-lg overflow-hidden">
       <div class="flex-[1]">
         <img src="./assets/images/greeting.png" class="h-full object-cover " />
       </div>
@@ -278,9 +284,9 @@
   <!-- greeting-section end -->
 
   <!-- greeting-section-mobile start -->
-  <div class="my-6 mx-5 flex justify-center items-center md:hidden">
+  <div class="my-16 mx-5 flex justify-center items-center md:hidden">
     <div class="">
-      <div class="rounded-lg overflow-hidden">
+      <div class="rounded-lg overflow-hidden shadow-md">
         <img src="./assets/images/Rectangle 1654.png" class="w-full h-full" />
       </div>
       <div class="bg-white rounded-lg relative p-10 mt-[-80px] mx-5">
@@ -316,7 +322,7 @@
 
   <!-- our-project-section start -->
   <div class="bg-white">
-    <div class="lg:container lg:mx-auto md:grid grid-cols-7 py-32">
+    <div class="md:container md:mx-auto md:grid grid-cols-7 md:py-32 py-16">
       <div class="flex justify-center items-center col-span-2">
         <div class="flex items-center flex-col mb-10">
           <p class="text-xl font-semibold mb-5">Our project</p>
@@ -396,7 +402,7 @@
 
       <!-- for mobile screen -->
       <div class="md:hidden flex flex-col gap-5 px-10 items-center ">
-        <div class="swiper-slide h-[390px] w-[300px] rounded-xl border">
+        <div class="swiper-slide h-[390px] w-[300px] shadow-md rounded-xl border">
           <img src="./assets/wh/img3.png" class="w-full h-[40%]" alt="">
           <div class="h-[60%] p-5">
             <p class="font-semibold text-lg mb-3">Working with us</p>
@@ -414,7 +420,7 @@
             </a>
           </div>
         </div>
-        <div class="swiper-slide h-[390px] w-[300px] rounded-xl border">
+        <div class="swiper-slide h-[390px] w-[300px] shadow-md rounded-xl border">
           <img src="./assets/wh/img3.png" class="w-full h-[40%]" alt="">
           <div class="h-[60%] p-5">
             <p class="font-semibold text-lg mb-3">Working with us</p>
@@ -432,7 +438,7 @@
             </a>
           </div>
         </div>
-        <div class="swiper-slide h-[390px] w-[300px] rounded-xl border">
+        <div class="swiper-slide h-[390px] w-[300px] shadow-md rounded-xl border">
           <img src="./assets/wh/img3.png" class="w-full h-[40%]" alt="">
           <div class="h-[60%] p-5">
             <p class="font-semibold text-lg mb-3">Working with us</p>
@@ -458,7 +464,7 @@
 
 
   <!-- business-facts-section start -->
-  <div class="lg:container lg:mx-auto mx-5 my-20">
+  <div class="md:container md:mx-auto px-5 my-20">
     <div class="flex justify-center flex-col items-center">
       <div class="flex items-center flex-col mb-10">
         <p class="text-xl font-semibold mb-5">Business Data Facts</p>
@@ -502,7 +508,7 @@
 
   <!-- partner-section start -->
   <div class="bg-white">
-    <div class="g:container lg:mx-auto">
+    <div class="md:container md:mx-auto">
       <div class="flex items-center flex-col pt-16">
         <p class="text-xl font-semibold mb-5">Partners</p>
         <p class="py-2 px-5 rounded-lg bg-orange-400/40 text-center text-[#FE7200]">Working with us?</p>
@@ -528,8 +534,8 @@
 
 
   <!-- news-section start-->
-  <div class="lg:container lg:mx-auto mx-5">
-    <div class="flex items-center gap-5 pt-16">
+  <div class="md:container md:mx-auto px-5">
+    <div class="flex flex-col md:flex-row items-center gap-5 pt-16">
       <p class="text-xl font-semibold">Latest news</p>
       <p class="py-2 px-5 rounded-lg bg-orange-400/40 flex items-center text-center text-[#FE7200]">More news
         <ion-icon name="chevron-forward-outline"
@@ -539,11 +545,11 @@
     <div class="relative">
       <div class="news-swiper overflow-hidden py-12">
         <div
-          class="hidden hover:pr-3 transition-all duration-200 lg:flex button-prev right-20 justify-center items-center absolute rounded-full border-gray-700 top-[-39px] border-2 w-10 h-10 text-gray-700 z-20">
+          class="hover:pr-3 transition-all duration-200 flex button-prev l-0 md:right-20 justify-center items-center absolute rounded-full border-gray-700 top-[-39px] border-2 w-10 h-10 text-gray-700 z-20">
           <ion-icon name="chevron-back-outline" class="text-2xl"></ion-icon>
         </div>
         <div
-          class="hidden hover:pl-3 transition-all duration-200 lg:flex button-next absolute  justify-center items-center right-0 rounded-full border-gray-700 top-[-39px] border-2 w-10 h-10 text-gray-700 z-20">
+          class="hover:pl-3 transition-all duration-200 flex button-next absolute  justify-center items-center right-0 rounded-full border-gray-700 top-[-39px] border-2 w-10 h-10 text-gray-700 z-20">
           <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
         </div>
 
@@ -616,19 +622,21 @@
 
   <!-- section start -->
   <div class="flex flex-col-reverse md:flex-row items-center justify-center md:container md:mx-auto my-10">
-    <div
-      class="bg-white relative mt-[-80px] md:static md:mt-0 mx-10 md:mx-0 rounded-lg overflow-hidden p-12 md:p-20 md:pr-40">
-      <p class="text-4xl text-gray-800 font-semibold mb-10 text-center">For inquiries</p>
-      <p class="text-gray-600 mb-10 text-center md:text-start">Get news first. Stay in touch with our latest updates,
-        investor news and media
-        releases
-      </p>
-      <form class="flex flex-col">
-        <label class="text-gray-600">Your Email address *</label>
-        <input class="border-b-2 outline-none mb-10 p-2" />
-        <button
-          class="border-[#FE7200] mx-auto md:mx-0 text-[#FE7200] hover:text-white hover:bg-[#FE7200] border-2 rounded-lg w-fit py-1 px-10">Submit</button>
-      </form>
+    <div class="px-10">
+      <div
+        class="bg-white shadow-md relative mt-[-80px] md:static md:mt-0 md:mx-0 rounded-lg overflow-hidden p-12 md:p-20 md:pr-40">
+        <p class="text-4xl text-gray-800 font-semibold mb-10 text-center">For inquiries</p>
+        <p class="text-gray-600 mb-10 text-center md:text-start">Get news first. Stay in touch with our latest updates,
+          investor news and media
+          releases
+        </p>
+        <form class="flex flex-col">
+          <label class="text-gray-600">Your Email address *</label>
+          <input class="border-b-2 outline-none mb-10 p-2" />
+          <button
+            class="border-[#FE7200] mx-auto md:mx-0 text-[#FE7200] hover:text-white hover:bg-[#FE7200] border-2 rounded-lg w-fit py-1 px-10">Submit</button>
+        </form>
+      </div>
     </div>
     <img src="./assets//images/Write-a-Professional-Email 1 (1).png"
       class="md:relative px-5 md:px-0 md:mt-0 md:ml-[-100px] w-[500px] h-full" />
@@ -648,7 +656,7 @@
         </div>
         <div class="lg:flex gap-6">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">For inquiries</h2>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-white">For inquiries</h2>
             <ul class="text-gray-400">
               <li class="mb-4">
                 <a href="#" class="hover:underline">Follow Taliin Khishig to stay up to date</a>
@@ -656,7 +664,7 @@
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Head Office</h2>
+            <h2 class="mb-6 text-sm font-semibold text-white">Head Office</h2>
             <ul class="text-gray-400">
               <li class="mb-4">
                 <a href="#" class="hover:underline ">Head Office Address</a>
@@ -665,7 +673,7 @@
           </div>
         </div>
         <div class="">
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">Contact us</h2>
           <form class="text-gray-400 flex flex-col">
             <label for="">Email*</label>
             <input type="text" class="outline-none rounded-lg p-1 mb-3">
@@ -676,12 +684,12 @@
           </form>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="flex sm:flex-row flex-col items-center gap-3 sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">All rights reserved by ‘Taliin Khishig
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="flex sm:flex-row flex-col items-center sm:justify-between">
+        <span class="text-sm sm:text-center text-gray-400  md:pb-0 pb-5">All rights reserved by ‘Taliin Khishig
           Mining LLC’ 2022
         </span>
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Developed by Global Smart Systems LLC,
+        <span class="text-sm sm:text-center text-gray-400">Developed by Global Smart Systems LLC,
         </span>
       </div>
     </div>
@@ -739,7 +747,7 @@
 
     const newsSwiper = new Swiper('.news-swiper', {
       // loop: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
         nextEl: ".button-next",
