@@ -9,6 +9,17 @@ header {
   animation: change 10s infinite ease-in-out;
 }
 
+header .nav-menu {
+  height: 0;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+header .nav-menu.active {
+  height: 100%;
+}
+
 @keyframes change {
   0% {
     background-image: url("../assets/images/hero1.png");
