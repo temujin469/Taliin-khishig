@@ -9,11 +9,13 @@ header {
   animation: change 10s infinite ease-in-out;
 }
 
-header .nav-menu {
-  height: 0;
-  transition: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+@media (max-width: 600px) {
+  header .nav-menu {
+    height: 0;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
 }
 
 header .nav-menu.active {
